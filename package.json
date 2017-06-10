@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "webpack bundler test and use",
+  "main": "entry.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "modesens",
+  "license": "ISC",
+  "devDependencies": {
+    "compression-webpack-plugin": "^0.4.0",
+    "uglify-js": "^2.8.23",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "webpack": "^2.1.0-beta.25"
+  }
+}
