@@ -7,7 +7,7 @@ npm i webpack -g
 
 在当前目录下新建文件webpack.config.js，编辑如下
 
-```
+```js
 module.exports = {
 entry: './JavaScriptNotes/test/src/frame8.js',
 output: {
@@ -37,7 +37,7 @@ yjs-webpack-plugin/issues/31
 2.Uglify(丑化压缩)
 webpack.config.js
 
-```
+```js
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
     module.exports = {
         entry: './JavaScriptNotes/test/src/frame8.js',
@@ -59,7 +59,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
     实验结果结果生效
 // webpack.config.js
 
-```
+```js
 const path = require("path");
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
@@ -83,7 +83,7 @@ module.exports = {
 文件名字发生变化之后，引用此html的地址也发生变化，这样long terms cache才会生效。
 // webpack.config.js
 
-```
+```js
 const path = require("path");
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var ManifestPlugin = require('webpack-manifest-plugin');
@@ -109,7 +109,7 @@ module.exports = {
 
 结果生成manifest.json文件
 
-```
+```js
 {
     "JS_FRAME.js": "entryJS_FRAME.76f9d4e3b5cd25fdeec2.js",
     "JS_MAIN.js": "entryJS_MAIN.68af7cf3fde3b49e84a5.js"
